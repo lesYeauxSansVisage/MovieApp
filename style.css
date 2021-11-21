@@ -1,8 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:wgth@200;400&display=swap");
 
 :root {
-  --primary-color: #22254b;
-  --secondary-color: #373b69;
+  --primary-color: #111;
+  --secondary-color: #555;
+  --overview-background-color: #333;
+  --overview-text-color: rgb(223, 223, 223);
 }
 
 * {
@@ -29,11 +31,11 @@ header {
   font-family: inherit;
   font-size: 1rem;
   padding: 0.5rem 1rem;
-  color: #fff;
+  color: var(--overview-text-color);
 }
 
 .search::placeholder {
-  color: #7378c5;
+  color: var(--overview-text-color);
 }
 
 .search:focus {
@@ -94,7 +96,8 @@ main {
 }
 
 .overview {
-  background-color: #fff;
+  background-color: var(--overview-background-color);
+  color: var(--overview-text-color);
   padding: 2rem;
   position: absolute;
   left: 0;
